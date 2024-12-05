@@ -32,5 +32,9 @@ class Owner:
     
     def get_sorted_pets(self):
         return sorted(self._pets, key=lambda pet: pet.name)
+    
+mitchelle = Owner("Mitchelle")
+dog = Pet('Boomer', "dog", mitchelle)
+print(dog.name, dog.pet_type, dog.owner.name)
 
 
